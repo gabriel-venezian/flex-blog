@@ -3,6 +3,7 @@
 /* 2. Super Info
 /* 3. Menu
 /* 4. Introduction
+/* 5. About
 /**********************************/
 
 /**********************************/
@@ -123,6 +124,44 @@ img {
   font-weight: bold;
   line-height: 1;
   max-inline-size: 96rem;
+  margin-block: 0;
+  margin-inline: auto;
   padding-block: 6rem;
   padding-inline: 1rem;
+}
+
+/**********************************/
+/* 5. About
+/**********************************/
+.about {
+  border-block: 0.2rem solid #2c70ff;
+  padding-block: 6rem;
+  max-inline-size: 96rem;
+  margin-block: 0;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-info {
+  flex: 2 1 30rem;
+  padding-inline: 1rem;
+}
+
+.about-info h1 {
+  font-size: 4.8rem;
+  margin-block-end: 2.4rem;
+}
+
+.about-info p {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-block-end: 2rem;
+  color: #7c7c7c;
+}
+
+.about-img {
+  flex: 1 1 16rem;
+  margin-inline: 1rem;
 }
