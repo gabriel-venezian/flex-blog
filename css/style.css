@@ -5,6 +5,7 @@
 /* 4. Introduction
 /* 5. About
 /* 6. Products
+/* 7. Prices
 /**********************************/
 
 /**********************************/
@@ -211,4 +212,109 @@ img {
   background-color: #f7f7f7;
   padding-block: 6rem;
   padding-inline: 2rem;
+}
+
+/**********************************/
+/* 7. Prices
+/**********************************/
+.prices {
+  background-color: #f7f7f7;
+  padding-block: 6rem;
+  padding-inline: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.prices-item {
+  flex: 1 1 26rem;
+  border: 0.4rem solid #fff;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+}
+
+.prices-item h2 {
+  font-size: 4.8rem;
+  color: #a4a4a4;
+  text-align: center;
+  padding-block-start: 2rem;
+}
+
+.prices-item span {
+  font-size: 4.8rem;
+  max-inline-size: 30rem;
+  margin-block: 2rem;
+  margin-inline: auto;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding-block-start: 1rem;
+  padding-block-end: 0.5rem;
+  border-block: 0.4rem solid #fff;
+}
+
+.prices-item sup {
+  font-size: 2.4rem;
+}
+
+.prices-item ul {
+  max-inline-size: 30rem;
+  margin-block: 2rem;
+  margin-inline: auto;
+  font-size: 2rem;
+  line-height: 1;
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.prices-item li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 1.6rem;
+}
+
+.prices-item li::after {
+  content: "";
+  display: block;
+  inline-size: 0.6rem;
+  block-size: 0.6rem;
+  background: #2c70ff;
+  border-radius: 50%;
+}
+
+.prices-item a {
+  max-inline-size: 30rem;
+  display: block;
+  margin-block: 2rem;
+  margin-inline: auto;
+  border: 0.4rem solid;
+  color: #222;
+  font-weight: bold;
+  font-size: 3.6rem;
+  text-align: center;
+  padding-block: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.prices-item a:hover {
+  background-color: #222;
+  color: #f7f7f7;
+}
+
+@media (max-width: 800px) {
+  .prices {
+    padding-inline: 1rem;
+  }
+
+  .prices .prices-item:nth-child(3) {
+    order: -2;
+  }
+
+  .prices .prices-item:nth-child(2) {
+    order: -1;
+  }
 }
