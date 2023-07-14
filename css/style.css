@@ -1,6 +1,7 @@
 /**********************************/
 /* 1. CSS Reset
 /* 2. Super Info
+/* 3. Menu
 /**********************************/
 
 /**********************************/
@@ -56,6 +57,7 @@ img {
   display: flex;
   max-inline-size: 96rem;
   padding-block: 1rem;
+  padding-inline: 1rem;
   margin-block: 0;
   margin-inline: auto;
   justify-content: space-between;
@@ -66,4 +68,48 @@ img {
 
 .superinfo a {
   color: #fff;
+}
+
+/**********************************/
+/* 3. Menu
+/**********************************/
+.menu-bg {
+  background: #2c70ff;
+}
+
+.menu {
+  display: flex;
+  max-inline-size: 96rem;
+  padding-inline: 1rem;
+  padding-block: 1.5rem;
+  margin-block: 0;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.menu-logo a {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  display: block;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+}
+
+.menu-nav a:hover {
+  color: #122ab2;
 }
