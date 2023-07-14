@@ -4,6 +4,7 @@
 /* 3. Menu
 /* 4. Introduction
 /* 5. About
+/* 6. Products
 /**********************************/
 
 /**********************************/
@@ -164,4 +165,50 @@ img {
 .about-img {
   flex: 1 1 16rem;
   margin-inline: 1rem;
+}
+
+/**********************************/
+/* 6. Products
+/**********************************/
+.products {
+  max-inline-size: 96rem;
+  margin-block: 6rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.products h1 {
+  font-size: 4.8rem;
+  margin-block-end: 6rem;
+}
+
+.products-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.products-item {
+  flex: 1 1 17.5rem;
+}
+
+.products-item.purple {
+  border-block-start: 0.8rem solid #ae81ff;
+}
+
+.products-item.pink {
+  border-block-start: 0.8rem solid #f9265e;
+}
+
+.products-item.blue {
+  border-block-start: 0.8rem solid #66d9eb;
+}
+
+.products h2 {
+  font-size: 4.8rem;
+  color: #a4a4a4;
+  background-color: #f7f7f7;
+  padding-block: 6rem;
+  padding-inline: 2rem;
 }
