@@ -8,6 +8,7 @@
 /* 7. Prices
 /* 8. Quality
 /* 9. Newsletter
+/* 10. Footer
 /**********************************/
 
 /**********************************/
@@ -440,4 +441,21 @@ img {
   color: #fff;
   cursor: pointer;
   padding-block: 1rem;
+}
+
+/**********************************/
+/* 10. Footer
+/**********************************/
+.footer {
+  block-size: 4rem;
+  background-color: #2c70ff;
+  display: flex;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
 }
