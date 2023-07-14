@@ -7,6 +7,7 @@
 /* 6. Products
 /* 7. Prices
 /* 8. Quality
+/* 9. Newsletter
 /**********************************/
 
 /**********************************/
@@ -371,4 +372,72 @@ img {
   font-size: 2rem;
   line-height: 1.4;
   color: #7c7c7c;
+}
+
+/**********************************/
+/* 9. Newsletter
+/**********************************/
+.newsletter {
+  display: flex;
+  background-color: #f7f7f7;
+  padding-block: 6rem;
+  padding-inline: calc((100% - 96rem) / 2);
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 26rem;
+  margin-inline: 1rem;
+}
+
+.newsletter-info h1 {
+  font-size: 4.8rem;
+  color: #a4a4a4;
+}
+
+.newsletter-info p {
+  font-size: 2rem;
+  font-style: italic;
+  max-inline-size: 22rem;
+  color: #7c7c7c;
+}
+
+.newsletter-form {
+  flex: 2 1 26rem;
+  margin-inline: 1rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  font-size: 2rem;
+  color: #7c7c7c;
+  font-style: italic;
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+  border: 0.4rem solid #2c70ff;
+  background: transparent;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  margin-block: 0;
+  margin-inline: 0;
+  border-radius: 0;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+}
+
+.newsletter-form button {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #2c70ff;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding-block: 1rem;
 }
